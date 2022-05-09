@@ -1,19 +1,26 @@
 import "./style.css";
 import React, { Suspense}  from "react";
 import { Canvas } from 'react-three-fiber';
-import { OrbitControls} from "@react-three/drei";
+import { OrbitControls, Stage } from "@react-three/drei";
 import { Jodan } from "./Pages/PageList";
 
 export default function App() {
   return (
     <>
-      <Canvas>
-        <OrbitControls />
-        <ambientLight intensity={0.3} />
-        <spotLight intensity={0.3} position={[5, 25, 20]} angle={0.1} penumbra={1} />
+      <Canvas shadows gl={{ preserveDrawingBuffer: true }} dpr={[1, 1.5]} camera={{ position: [0, 10, 15], fov: 50 }}>
+        <ambientLight intensity={0.25} />
         <Suspense fallback={null}>
-          <Jodan />
+          <Stage 
+            contactShadow  
+            shadows  
+            adjustCamera  
+            intensity = { 1 }  
+            environment = "city"  
+            preset = "rembrandt">
+            <Jodan />
+          </Stage>
         </Suspense>
+        <OrbitControls />
       </Canvas>
     </>
   )

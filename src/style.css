@@ -16,7 +16,7 @@ body,
   -ms-user-select: none;
   user-select: none;
   /* overflow: hidden; */
-  background: white;
+  background: rgba(139, 139, 139, 0.014);
 }
 
 body {
