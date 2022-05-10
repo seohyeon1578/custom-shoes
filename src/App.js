@@ -11,16 +11,16 @@ export default function App() {
         <ambientLight intensity={0.25} />
         <Suspense fallback={null}>
           <Stage 
-            contactShadow  
+            contactShadow={{blur:8, opacity:1}} 
             shadows  
-            adjustCamera  
+            adjustCamera={null}  
             intensity = { 1 }  
             environment = "city"  
             preset = "rembrandt">
             <Jodan />
           </Stage>
         </Suspense>
-        <OrbitControls />
+        <OrbitControls minPolarAngle={Math.PI / 3} maxPolarAngle={Math.PI / 3} enableZoom={false} enablePan={false}/>
       </Canvas>
     </>
   )
