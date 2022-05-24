@@ -1,8 +1,8 @@
-import "./style.css";
+import "./styles/style.css";
 import React, { Suspense}  from "react";
 import { Canvas } from 'react-three-fiber';
 import { OrbitControls, Stage } from "@react-three/drei";
-import { Jodan } from "./Pages/PageList";
+import { Jodan,Menu } from "./Pages/PageList";
 
 export default function App() {
   return (
@@ -22,6 +22,7 @@ export default function App() {
         </Suspense>
         <OrbitControls minPolarAngle={Math.PI / 3} maxPolarAngle={Math.PI / 3} enableZoom={false} enablePan={false}/>
       </Canvas>
+      <Menu />
     </>
   )
 }
