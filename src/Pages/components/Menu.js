@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/menu.css";
 
 const Menu = () => {
+  const [click, setClick] = useState(0);
+
+  const handleClick = () => setClick(!click);
 
   return(
-    <div className="tray">
+    <div className={click ? "tray size": "tray"}>
       <div className="tray-header flx">
-        <button className="up flx"/>
+        <button className={click ? "down flx": "up flx"} onClick={handleClick}/>
         <div className="flx nav">
           <button className="flx left"/>
           <div className="flx tDiv">
