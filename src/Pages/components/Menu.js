@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/menu.css";
 
-const Menu = () => {
+const Menu = (props) => {
   const [click, setClick] = useState(0);
 
   const handleClick = () => setClick(!click);
@@ -14,7 +14,7 @@ const Menu = () => {
           <button className="flx left"/>
           <div className="flx tDiv">
             <div className="title">
-              <span className="fnt">Tongue</span>
+              <span className="fnt">{props.state}</span>
               <span className="num">1/13</span>
             </div>
           </div>

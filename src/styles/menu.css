@@ -9,7 +9,7 @@
   height: 10vh;
   bottom: 0%;
   overflow: hidden;
-  transition: all .5s linear;
+  transition: all .5s ease-out;
 }
 
 .size {
