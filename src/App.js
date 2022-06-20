@@ -1,5 +1,5 @@
 import "./styles/style.css";
-import React, { Suspense}  from "react";
+import React, { Suspense, useState}  from "react";
 import { Canvas } from 'react-three-fiber';
 import { OrbitControls, Stage } from "@react-three/drei";
 import { proxy } from "valtio";
@@ -27,7 +27,9 @@ const state = proxy({
 })
 
 export default function App() {
-  console.log("나:",state.current)
+
+  const [value, setValue] = useState(state)
+
   return (
     <>
       <Canvas shadows gl={{ preserveDrawingBuffer: true }} dpr={[1, 1.5]} camera={{ position: [0, 10, 15], fov: 50 }}>
@@ -40,12 +42,12 @@ export default function App() {
             intensity = { 1 }  
             environment = "city"  
             preset = "rembrandt">
-            <Jodan state={state}/>
+            <Jodan state={value} setValue={setValue}/>
           </Stage>
         </Suspense>
         <OrbitControls minPolarAngle={Math.PI / 3} maxPolarAngle={Math.PI / 3} enableZoom={false} enablePan={false}/>
       </Canvas>
-      <Menu state={state.current}/>
+      <Menu state={value.current}/>
     </>
   )
 }
