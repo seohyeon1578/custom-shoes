@@ -23,3 +23,98 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
     segoe ui, arial, sans-serif;
 }
+
+.bg-border-flx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  height: 40px;
+  width: 40px;
+}
+
+.now-border {
+  border: 1px solid gray;
+  border-radius: 50%;
+} 
+
+.black {
+  cursor: pointer;
+  background-color: black;
+  border-radius: 50%;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.white {
+  cursor: pointer;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.gray {
+  cursor: pointer;
+  background-color: gray;
+  border-radius: 50%;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.red {
+  cursor: pointer;
+  background-color: red;
+  border-radius: 50%;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.yellow {
+  cursor: pointer;
+  background-color: #d7ab40;
+  border-radius: 50%;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.green {
+  cursor: pointer;
+  background-color: #8cad5f;
+  border-radius: 50%;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.pink {
+  cursor: pointer;
+  background-color: pink;
+  border-radius: 50%;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.purple {
+  cursor: pointer;
+  background-color: #aab1db;
+  border-radius: 50%;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.blue {
+  cursor: pointer;
+  background-color: #9ac5dc;
+  border-radius: 50%;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
