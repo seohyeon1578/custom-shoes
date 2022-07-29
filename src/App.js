@@ -26,7 +26,7 @@ export default function App() {
         </Suspense>
         <OrbitControls minPolarAngle={Math.PI / 3} maxPolarAngle={Math.PI / 3} enableZoom={false} enablePan={false}/>
       </Canvas>
-      <Menu value={value.current} setValue={setValue}/>
+      <Menu />
     </>
   )
 }

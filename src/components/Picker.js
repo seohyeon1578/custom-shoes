@@ -44,7 +44,7 @@ const colors = [
 export const Picker = () => {
     const [nowColor, setNowColor] = useState('');
     const snap = useSnapshot(state);
-
+    console.log(snap.current)
     const onColorClick = (e) => {
         const {
             target: {value},
@@ -52,12 +52,12 @@ export const Picker = () => {
         setNowColor(value);
         state.items[snap.current] = value;
     }
-    console.log(nowColor)
+    
     return(
         <div style={{display: 'flex'}}>
             {colors.map(({ name, color }) => {
                 return (
-                    <div className={nowColor === color ? "bg-border-flx now-border" : "bg-border-flx"}>
+                    <div key={name} className={nowColor === color ? "bg-border-flx now-border" : "bg-border-flx"}>
                         <button onClick={onColorClick} className={name} value={color} />
                     </div>
                 )

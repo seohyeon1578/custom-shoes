@@ -17,11 +17,10 @@ export default function Model({value, setValue}) {
   
   const onChangeState = (e) => {
     e.stopPropagation();
-    state.current = e.object.material.name
+    state.current = e.object.material.name;
     setValue((prev)=>proxy({...prev, current : e.object.material.name}));
   }
 
-  console.log(materials["quarter bet"])
   return (
     <group 
     ref={ref} 
@@ -29,7 +28,6 @@ export default function Model({value, setValue}) {
     dispose={null}
     onPointerOver = {(e) => (e.stopPropagation(), set(e.object.material.name))}
     onPointerOut = {(e) => e.intersections.length === 0 && set(null)}
-    onPointerMissed = {() => setValue(null)}
     onPointerDown = {onChangeState}
     >
       <mesh
@@ -148,7 +146,7 @@ export default function Model({value, setValue}) {
         castShadow
         receiveShadow
         geometry={nodes.Midsole.geometry}
-        material-color = {snap.items.Midsole}
+        material-color = {snap.items.midsole}
         material={nodes.Midsole.material}
         position={[-2.02282715, 0.68628597, 0.61215419]}
         scale={0.36012027}

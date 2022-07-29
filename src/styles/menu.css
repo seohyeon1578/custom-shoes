@@ -119,28 +119,3 @@
   background-position: right;
   background-size: contain;
 }
-
-.menuBtn {
-  position: relative;
-  right: 50px;
-  border: 1px solid rgb(229, 229, 229);
-  border-radius: 24px;
-  padding: 6px 18px 6px 16px;
-  background: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menuImg {
-  width: 24px;
-  height: 24px;
-
-}
-
-.menuFnt {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  margin-left: 3px;
-}
