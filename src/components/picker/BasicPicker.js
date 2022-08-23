@@ -1,50 +1,12 @@
 import { useState } from "react";
 import { useSnapshot  } from "valtio";
-import { state } from "./State";
+import { state } from "../../state/State";
+import colors from "./colors.json";
 
-const colors = [
-    {
-        name: 'red',
-        color: '#7e0b11',
-    },
-    {
-        name: 'yellow',
-        color: '#c79a49',
-    },
-    {
-        name: 'green',
-        color: '#8cad5f',
-    },
-    {
-        name: 'blue',
-        color: '#9ac5dc',
-    },
-    {
-        name: 'purple',
-        color: '#aab1db',
-    },
-    {
-        name: 'pink',
-        color: '#d6a08f',
-    },
-    {
-        name: 'black',
-        color: '#111111',
-    },
-    {
-        name: 'white',
-        color: '#d8d8d8',
-    },
-    {
-        name: 'gray',
-        color: '#595959',
-    },
-]
-
-export const Picker = () => {
+export const BasicPicker = () => {
     const [nowColor, setNowColor] = useState('');
     const snap = useSnapshot(state);
-    console.log(snap.current)
+
     const onColorClick = (e) => {
         const {
             target: {value},

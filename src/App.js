@@ -4,7 +4,7 @@ import { Canvas } from 'react-three-fiber';
 import { OrbitControls, Stage } from "@react-three/drei";
 import { Jodan } from "./Pages/PageList";
 import Menu from "./components/Menu";
-import { state } from "./components/State";
+import { state } from "./state/State";
 
 export default function App() {
   const [value, setValue] = useState(state)

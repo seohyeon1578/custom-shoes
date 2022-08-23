@@ -1,0 +1,38 @@
+[
+  {
+      "name": "red",
+      "color": "#7e0b11"
+  },
+  {
+      "name": "yellow",
+      "color": "#c79a49"
+  },
+  {
+      "name": "green",
+      "color": "#8cad5f"
+  },
+  {
+      "name": "blue",
+      "color": "#9ac5dc"
+  },
+  {
+      "name": "purple",
+      "color": "#aab1db"
+  },
+  {
+      "name": "pink",
+      "color": "#d6a08f"
+  },
+  {
+      "name": "black",
+      "color": "#111111"
+  },
+  {
+      "name": "white",
+      "color": "#d8d8d8"
+  },
+  {
+      "name": "gray",
+      "color": "#595959"
+    }
+]

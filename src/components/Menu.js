@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Picker } from "./Picker";
-import { state } from "./State";
+import { BasicPicker } from "./picker/BasicPicker";
+import { state } from "../state/State";
 import "../styles/menu.css";
 
 const Menu = () => {
@@ -9,7 +9,6 @@ const Menu = () => {
   const [proxy, setProxy] = useState("");
 
   useEffect(() => {
-    console.log(currentNum)
     if(currentNum === -1){
       return setCurrentNum(1);
     }
@@ -59,7 +58,7 @@ const Menu = () => {
 
       </div>
       <div className="tray-body flx">
-        <Picker />
+        <BasicPicker />
       </div>
     </div>
   )
