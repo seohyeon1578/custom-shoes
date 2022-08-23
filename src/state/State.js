@@ -7,7 +7,7 @@ export const state = proxy({
       logo: "#ffffff",
       collar: "#ffffff",
       heel: "#ffffff",
-      quarter_bet: "#ffffff",
+      'quarter bet': "#ffffff",
       OUTSOLE: "#ffffff",
       midsole: "#ffffff",
       laces: "#ffffff",
@@ -32,6 +32,6 @@ export const state = proxy({
       linear: 10,
       eyelets: 11,
       Spitze: 12,
-      quarter_bet: 13,
+      'quarter bet': 13,
     }
   })
