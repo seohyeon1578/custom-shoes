@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import { BasicPicker } from "./picker/BasicPicker";
 import { state } from "../state/State";
 import "../styles/menu.css";
+import { AllPicker } from "./picker/AllPicker";
 
 const Menu = () => {
+  const [isPicker, setIsPicker] = useState(false);
   const [click, setClick] = useState(false);
   const [currentNum, setCurrentNum] = useState(0);
   const [proxy, setProxy] = useState("");
@@ -55,10 +57,10 @@ const Menu = () => {
           </div>
           <button className="flx right" onClick={PlusNowState}/>
         </div>
-
       </div>
       <div className="tray-body flx">
-        <BasicPicker />
+        <div></div>
+        {isPicker ? <BasicPicker /> : <AllPicker />}
       </div>
     </div>
   )

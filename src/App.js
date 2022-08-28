@@ -21,7 +21,7 @@ export default function App() {
             intensity = { 1 }  
             environment = "city"  
             preset = "rembrandt">
-            <Jodan value={value} setValue={setValue}/>
+            {/* <Jodan value={value} setValue={setValue}/> */}
           </Stage>
         </Suspense>
         <OrbitControls minPolarAngle={Math.PI / 3} maxPolarAngle={Math.PI / 3} enableZoom={false} enablePan={false}/>

@@ -6,7 +6,8 @@ export const AllPicker = () => {
   const snap = useSnapshot(state);
   return(
     <div style={{display: "flex"}}>
-      <HexColorPicker 
+      <HexColorPicker
+        style={{height: '200px'}} 
         color={snap.items[snap.current]}
         onChange={color => state.items[snap.current] = color}
       />
