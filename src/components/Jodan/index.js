@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "react-three-fiber";
 import { proxy, useSnapshot  } from "valtio";
-import { state } from "../../state/State";
+import { state } from "../../store/State";
 
 export default function Model({value, setValue}) {
   const ref = useRef();

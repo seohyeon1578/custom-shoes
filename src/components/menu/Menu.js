@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { BasicPicker } from "./picker/BasicPicker";
-import { state } from "../state/State";
-import "../styles/menu.css";
-import { AllPicker } from "./picker/AllPicker";
+import { BasicPicker } from "../picker/BasicPicker";
+import { state } from "../../store/State";
+import "../../assets/styles/menu.css";
+import { AllPicker } from "../picker/AllPicker";
 
 const Menu = () => {
   const [isPicker, setIsPicker] = useState(false);

@@ -1,6 +1,6 @@
 import { HexColorPicker } from "react-colorful";
 import { useSnapshot  } from "valtio";
-import { state } from "../../state/State";
+import { state } from "../../store/State";
 
 export const AllPicker = () => {
   const snap = useSnapshot(state);
