@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSnapshot  } from "valtio";
-import { state } from "../../store/State";
+import { state } from "../../../store/State";
 import colors from "./colors.json";
 
 export const BasicPicker = () => {

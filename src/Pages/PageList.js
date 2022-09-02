@@ -1,2 +1,2 @@
-export { default as Jodan } from "../components/Jodan/index";
+export { default as Jodan } from "../Pages/Jodan";
 
