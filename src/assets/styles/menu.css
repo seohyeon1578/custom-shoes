@@ -22,15 +22,20 @@
   top: 19px;
   height: 40px;
   justify-content: space-between;
+  align-items: center;
+}
+
+.tray-body {
+  justify-content: center;
+  align-items: center;
+  height: 280px;
 }
 
 .picker-menu{
+  position: absolute;
+  right: 2%;
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 28%;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .picker-menu button{
@@ -44,12 +49,6 @@
 
 .picker-menu button:hover {
   background-color: pink;
-}
-
-.tray-body {
-  justify-content: center;
-  align-items: center;
-  height: 280px;
 }
 
 .up {

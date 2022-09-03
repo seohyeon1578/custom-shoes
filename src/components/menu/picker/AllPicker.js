@@ -5,10 +5,7 @@ import { state } from "../../../store/State";
 export const AllPicker = () => {
   const snap = useSnapshot(state);
   return(
-    <div style={{ 
-                  position: 'absolute',
-                  bottom: '4%'
-                }}>
+    <div style={{ transform: 'translateY(24%)'}}>
       <HexColorPicker
         style={{height: '130px', width: '130px'}} 
         color={snap.items[snap.current]}

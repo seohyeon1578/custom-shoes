@@ -10,19 +10,6 @@ const Menu = () => {
   const [currentNum, setCurrentNum] = useState(0);
   const [proxy, setProxy] = useState("");
 
-  useEffect(() => {
-    if(currentNum === -1){
-      return setCurrentNum(1);
-    }
-    if(currentNum !== 0){
-      ChangeCurrentState();
-    }
-  },[currentNum])
-
-  useEffect(() => {
-    console.log(state.current)
-  },[proxy])
-
   const PlusNowState = () => {
     console.log(state.num[state.current] + 1)
     setCurrentNum(state.num[state.current] + 1);
@@ -40,8 +27,21 @@ const Menu = () => {
       return state.current = key;
     })
   }
-
+  
   const handleClick = () => setClick(prev => !prev);
+  
+  useEffect(() => {
+    if(currentNum === -1){
+      return setCurrentNum(1);
+    }
+    if(currentNum !== 0){
+      ChangeCurrentState();
+    }
+  },[currentNum])
+
+  useEffect(() => {
+    console.log(state.current)
+  },[proxy])
 
   return(
     <div className={!click ? "tray size": "tray"}>
@@ -57,11 +57,11 @@ const Menu = () => {
           </div>
           <button className="flx right" onClick={PlusNowState}/>
         </div>
-      </div>
-      <div className="picker-menu">
-        <button onClick={() => setIsPicker(true)}>BASIC</button>
-        <span style={{margin: '0 10px'}}>/</span>
-        <button onClick={() => setIsPicker(false)}>ALL</button>
+        <div className="picker-menu">
+          <button onClick={() => setIsPicker(true)}>BASIC</button>
+          <span style={{margin: '0 10px'}}>/</span>
+          <button onClick={() => setIsPicker(false)}>ALL</button>
+        </div>
       </div>
       <div className="tray-body flx">
         {isPicker ? <BasicPicker /> : <AllPicker />}
