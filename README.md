@@ -1,18 +1,5 @@
-# Three.js-React-Template
+# Custom-shoes
 
-## Setup
+![custom-shoes](./example.png)
 
-```bash
-#install dependencies
-npm i
-yarn add
 
-#Run the local server at lacalhost:3000
-yarn start
-
-#Build
-yarn build
-
-#Test 
-yarn test
-```
