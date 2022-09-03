@@ -79,7 +79,7 @@ export default function Model({value, setValue}) {
       <mesh
         geometry={nodes.quarter_bet.geometry}
         material-color = {snap.items.quarter_bet}
-        material={materials["quarter bet"]}
+        material={materials["quarter_bet"]}
         position={[-0.13337603, 2.23271489, 0.92367584]}
         rotation={[1.2887357, 0, 0]}
         scale={0.44894356}
