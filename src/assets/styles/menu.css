@@ -24,6 +24,28 @@
   justify-content: space-between;
 }
 
+.picker-menu{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.picker-menu button{
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  background-color: initial;
+  border: 1px solid #111;
+  border-radius: 20px;
+}
+
+.picker-menu button:hover {
+  background-color: pink;
+}
+
 .tray-body {
   justify-content: center;
   align-items: center;

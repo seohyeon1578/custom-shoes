@@ -5,7 +5,7 @@ import "../../assets/styles/menu.css";
 import { AllPicker } from "./picker/AllPicker";
 
 const Menu = () => {
-  const [isPicker, setIsPicker] = useState(false);
+  const [isPicker, setIsPicker] = useState(true);
   const [click, setClick] = useState(false);
   const [currentNum, setCurrentNum] = useState(0);
   const [proxy, setProxy] = useState("");
@@ -58,8 +58,12 @@ const Menu = () => {
           <button className="flx right" onClick={PlusNowState}/>
         </div>
       </div>
+      <div className="picker-menu">
+        <button onClick={() => setIsPicker(true)}>BASIC</button>
+        <span style={{margin: '0 10px'}}>/</span>
+        <button onClick={() => setIsPicker(false)}>ALL</button>
+      </div>
       <div className="tray-body flx">
-        <div></div>
         {isPicker ? <BasicPicker /> : <AllPicker />}
       </div>
     </div>

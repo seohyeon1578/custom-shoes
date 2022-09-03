@@ -5,9 +5,12 @@ import { state } from "../../../store/State";
 export const AllPicker = () => {
   const snap = useSnapshot(state);
   return(
-    <div style={{display: "flex"}}>
+    <div style={{ 
+                  position: 'absolute',
+                  bottom: '4%'
+                }}>
       <HexColorPicker
-        style={{height: '150px', width: '150px'}} 
+        style={{height: '130px', width: '130px'}} 
         color={snap.items[snap.current]}
         onChange={color => state.items[snap.current] = color}
       />
